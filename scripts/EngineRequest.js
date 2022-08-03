@@ -48,8 +48,17 @@ function SendRequest() {
     if (engine_url != null) {
       let request = document.querySelector('.search-text').value;
 
-      window.location.href = engine_url + request;
-      console.log("Sended." + engine)
+        if (request.includes('>', -1)) {
+          console.log('yes');
+          window.location.href = "http://" + request.substring(1);
+          console.log("Request sent to: " + request.substring(1));
+        } else {
+          console.log('no');
+          window.location.href = engine_url + request;
+          console.log("Request sent to: " + engine_type);
+        }
+      } else {
+        document.getElementById('engines_trigger').style.animation = 'search-engines-error 0.1s linear 5';
     }
   }
 }
