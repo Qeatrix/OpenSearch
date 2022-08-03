@@ -10,7 +10,7 @@ document.addEventListener('keydown', function(event){
 
   ChangeStatus = localStorage.getItem('hidden_content');
 
-  if (event.ctrlKey) {
+  if (event.altKey && ['Q','q'].includes(event.key)) {
 
     console.log(ChangeStatus)
     if (ChangeStatus != 'show') {
