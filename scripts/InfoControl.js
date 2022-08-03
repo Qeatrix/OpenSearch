@@ -10,7 +10,7 @@ document.addEventListener('keydown', function(event){
 
   ChangeStatus = localStorage.getItem('hidden_content');
 
-  if (event.shiftKey) {
+  if (event.ctrlKey) {
 
     console.log(ChangeStatus)
     if (ChangeStatus != 'show') {
