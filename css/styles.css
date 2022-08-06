@@ -77,6 +77,11 @@
  100% { left: 50%; }
 }
 
+@keyframes search-link-redirect {
+  0% { outline: 3px solid #3e9bf3; }
+ 100% { outline: 3px solid #40db32; }
+}
+
 .engine {
   background-color: #F2F2F2;
   color: #B7B7B7;

@@ -49,9 +49,16 @@ function SendRequest() {
       let request = document.querySelector('.search-text').value;
 
         if (request.includes('>', -1)) {
-          console.log('yes');
-          window.location.href = "http://" + request.substring(1);
+          if (request.includes('http://', 0) || request.includes('https://', 0)) {
+            window.location.href = request.substring(1);
+            console.log("Defined full wesite adress")
+          } else {
+            window.location.href = "https://" + request.substring(1);
+            console.log("Defined short wesite adress")
+          }
           console.log("Request sent to: " + request.substring(1));
+
+          document.getElementById('search_text_input').style.animation = 'search-link-redirect 0.1s linear';
         } else if (request == '@y') {
           ChooseYandex();
           RestyleYandex();
