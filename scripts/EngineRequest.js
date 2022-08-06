@@ -62,7 +62,7 @@ function SendRequest() {
           RestyleGoogle();
 
           document.querySelector('.search-text').value = null;
-        } else if (request.includes('@b')) {
+        } else if (request.includes('@b')) {''
           ChooseBing();
           RestyleBing();
 
@@ -73,7 +73,6 @@ function SendRequest() {
 
           document.querySelector('.search-text').value = null;
         } else {
-          console.log('no');
           window.location.href = engine_url + request;
           console.log("Request sent to: " + engine_type);
         }
