@@ -52,22 +52,22 @@ function SendRequest() {
           console.log('yes');
           window.location.href = "http://" + request.substring(1);
           console.log("Request sent to: " + request.substring(1));
-        } else if (request.includes('@y')) {
+        } else if (request == '@y') {
           ChooseYandex();
           RestyleYandex();
 
           document.querySelector('.search-text').value = null;
-        } else if (request.includes('@g')) {
+        } else if (request == '@g') {
           ChooseGoogle();
           RestyleGoogle();
 
           document.querySelector('.search-text').value = null;
-        } else if (request.includes('@b')) {''
+        } else if (request == '@b') {''
           ChooseBing();
           RestyleBing();
 
           document.querySelector('.search-text').value = null;
-        } else if (request.includes('@d')) {
+        } else if (request == '@d') {
           ChooseDuckDuckGo();
           RestyleDuckDuckGo();
 
