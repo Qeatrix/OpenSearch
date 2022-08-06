@@ -52,6 +52,26 @@ function SendRequest() {
           console.log('yes');
           window.location.href = "http://" + request.substring(1);
           console.log("Request sent to: " + request.substring(1));
+        } else if (request.includes('@y')) {
+          ChooseYandex();
+          RestyleYandex();
+
+          document.querySelector('.search-text').value = null;
+        } else if (request.includes('@g')) {
+          ChooseGoogle();
+          RestyleGoogle();
+
+          document.querySelector('.search-text').value = null;
+        } else if (request.includes('@b')) {
+          ChooseBing();
+          RestyleBing();
+
+          document.querySelector('.search-text').value = null;
+        } else if (request.includes('@d')) {
+          ChooseDuckDuckGo();
+          RestyleDuckDuckGo();
+
+          document.querySelector('.search-text').value = null;
         } else {
           console.log('no');
           window.location.href = engine_url + request;
