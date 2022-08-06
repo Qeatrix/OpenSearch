@@ -79,7 +79,8 @@
 
 @keyframes search-link-redirect {
   0% { outline: 3px solid #3e9bf3; }
- 100% { outline: 3px solid #40db32; }
+ 5% { outline: 3px solid #40db32; }
+ 100% { outline: 3px solid #3e9bf3; }
 }
 
 .engine {

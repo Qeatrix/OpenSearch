@@ -58,7 +58,7 @@ function SendRequest() {
           }
           console.log("Request sent to: " + request.substring(1));
 
-          document.getElementById('search_text_input').style.animation = 'search-link-redirect 0.1s linear';
+          document.getElementById('search_text_input').style.animation = 'search-link-redirect 0.5s linear';
         } else if (request == '@y') {
           ChooseYandex();
           RestyleYandex();
