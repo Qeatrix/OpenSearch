@@ -36,8 +36,8 @@ function RestyleYandex() {
     ResetAll()
   }
 
-  changable_button_yandex.style.backgroundColor = '#FFC0C0';
-  changable_button_yandex.style.color = '#EF3636';
+  changable_button_yandex.style.backgroundColor = '#e599f7';
+  changable_button_yandex.style.color = '#cf1bfa';
   console.log('Changed state for: Yandex [Active]')
 
 
