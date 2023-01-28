@@ -9,7 +9,7 @@ document.querySelector('*').addEventListener('keypress', SendRequest);
 
 function ChooseYandex() {
   engine_type = 'yandex';
-  engine_url = 'https://yandex.ru/search/?text=';
+  engine_url = 'https://you.com/search?q=';
 
   localStorage.setItem('engine_type', 'yandex');
   localStorage.setItem('engine_url', 'https://you.com/search?q=');
