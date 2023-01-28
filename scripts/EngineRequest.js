@@ -12,7 +12,7 @@ function ChooseYandex() {
   engine_url = 'https://yandex.ru/search/?text=';
 
   localStorage.setItem('engine_type', 'yandex');
-  localStorage.setItem('engine_url', 'https://yandex.ru/search/?text=');
+  localStorage.setItem('engine_url', 'https://you.com/search?q=');
   console.log("Chose search engine: Yandex")
 }
 
